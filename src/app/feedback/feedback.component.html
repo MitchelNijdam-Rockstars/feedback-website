@@ -1,0 +1,16 @@
+<div class="feedback-container">
+  <h1>AI Webinar</h1>
+  <div class="feedback-buttons">
+    <div class="thumbs-up">
+      <button (click)="increaseThumbsUp()">👍</button>
+      <p>{{ thumbsUp }} likes</p>
+    </div>
+    <div class="thumbs-down">
+      <button (click)="increaseThumbsDown()">👎</button>
+      <p>{{ thumbsDown }} dislikes</p>
+    </div>
+  </div>
+  <div class="percentage">
+    <p>{{ getApprovalPercentage() }}% approval</p>
+  </div>
+</div>
