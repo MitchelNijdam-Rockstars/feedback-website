@@ -1,12 +1,48 @@
+/* feedback.component.css */
 .feedback-container {
   text-align: center;
+  margin-top: 50px;
+}
+
+.feedback-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feedback-buttons button {
   font-size: 24px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 50%; /* Makes it round */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.feedback-buttons button:focus {
+  outline: none;
+}
+
+.feedback-buttons button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.thumbs-up {
+  color: green;
+}
+
+.thumbs-down {
+  color: red;
 }
 
 .percentage p {
   font-weight: bold;
+  margin-top: 20px;
 }
