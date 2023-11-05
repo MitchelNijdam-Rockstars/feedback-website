@@ -1,12 +1,14 @@
 <!-- feedback.component.html -->
 <div class="feedback-container">
   <h1>AI Webinar</h1>
-  <div>
-    <button (click)="vote(true)">👍</button>
-    <span>{{ upvotes }}</span>
-  </div>
-  <div>
-    <button (click)="vote(false)">👎</button>
-    <span>{{ downvotes }}</span>
+  <div class="feedback-buttons">
+    <div class="vote-container">
+      <button (click)="vote(true)">👍</button>
+      <div class="vote-count">{{ upvotes }}</div>
+    </div>
+    <div class="vote-container">
+      <button (click)="vote(false)">👎</button>
+      <div class="vote-count">{{ downvotes }}</div>
+    </div>
   </div>
 </div>
